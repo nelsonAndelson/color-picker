@@ -1,0 +1,120 @@
+:root {
+  --bg-color: #fff;
+  --dark-bg-color: #1f2937;
+  --primary-color: #2b283a;
+  --secondary-color: #d1d5db;
+}
+
+body,
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+}
+
+header {
+  padding: 1rem;
+}
+
+input[type="color"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border: none;
+  width: 3.8rem;
+  height: 2.6rem;
+  cursor: pointer;
+  background-color: var(--secondary-color);
+}
+
+.dropdown {
+  position: relative;
+  margin: 0 0.8em;
+  border: 1px solid var(--secondary-color);
+  border-radius: 0.5rem;
+  padding: 0.5em;
+  flex-grow: 6;
+  transition: all 0.2s;
+}
+
+.dropdown-select {
+  justify-content: space-between;
+}
+
+.options {
+  display: none;
+  padding: 0.3em;
+  position: absolute;
+  top: 2.8em;
+  left: 0;
+  width: 100%;
+  border: 1px solid var(--secondary-color);
+  border-radius: 0.5rem;
+  box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1),
+    0px 4px 6px -2px rgba(0, 0, 0, 0.05), 0px 0px 0px 1px rgba(0, 0, 0, 0.05);
+  background-color: var(--bg-color);
+}
+.option:not(:first-child, :last-child) {
+  margin: 0.1em 0;
+}
+
+.option {
+  /* border: 1px solid #ccc; */
+  padding: 0.5em;
+  cursor: pointer;
+}
+.option:hover {
+  font-weight: bold;
+}
+.selected-option {
+  font-weight: bold;
+  display: flex;
+}
+.selected-option::after {
+  content: "\2713";
+  margin-left: auto;
+}
+
+header button {
+  background-color: var(--bg-color);
+  border: 1px solid var(--secondary-color);
+  border-radius: 0.5em;
+  padding: 0.5em;
+  cursor: pointer;
+}
+
+header button:hover {
+  background-color: var(--dark-bg-color);
+  color: var(--bg-color);
+}
+
+/* Main */
+.colors {
+  
+}
+.color {
+  /* width: 100%; */
+  flex-grow: 1;
+  background-color: #f2362a;
+  height: 40vh;
+}
+.color-footer {
+  background-color: var(--bg-color);
+  text-align: center;
+}
+/* utilites */
+.flex {
+  display: flex;
+}
+.container {
+  border: 1px solid var(--secondary-color);
+  max-width: 780px;
+  margin: 0 auto;
+}
+
+.show {
+  display: block;
+}

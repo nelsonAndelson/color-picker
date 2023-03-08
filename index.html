@@ -2,12 +2,81 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
+    <link rel="stylesheet" href="/public/css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <title>Color Picker</title>
   </head>
   <body>
-    <div id="app"></div>
-    <script type="module" src="/main.js"></script>
+    <div class="container">
+      <header class="flex">
+        <input type="color" name="color-picker" id="color-picker" />
+
+        <!-- dropdown -->
+        <div class="dropdown" id="dropdown-el">
+          <div class="dropdown-select flex">
+            <span> Monochrome </span>
+            <span class="caret"><i class="fa fa-caret-down"></i></span>
+          </div>
+          <div class="options">
+            <div class="option selected-option">Monochrome</div>
+            <div class="option">Monochrome-dark</div>
+            <div class="option">Monochrome-light</div>
+            <div class="option">Analogic</div>
+            <div class="option">Complement</div>
+            <div class="option">Analogic-complement</div>
+            <div class="option">Triad</div>
+          </div>
+        </div>
+
+        <button>Get color scheme</button>
+      </header>
+
+      <main>
+        <div class="colors flex">
+          <div class="color">
+            <div class="color" style="background-color: antiquewhite;"></div>
+            <div class="color-footer">#F2362A</div>
+          </div>
+
+          <div class="color">
+            <div class="color" style="background-color: rgb(124, 70, 0);"></div>
+            <div class="color-footer">#F2362A</div>
+          </div>
+
+          <div class="color">
+            <div class="color" style="background-color: rgb(2, 95, 156);"></div>
+            <div class="color-footer">#F2362A</div>
+          </div>
+
+          <div class="color">
+            <div class="color" style="background-color: rgb(168, 226, 168);"></div>
+            <div class="color-footer">#F2362A</div>
+          </div>
+
+          <div class="color">
+            <div class="color" style="background-color: rgb(52, 4, 75);"></div>
+            <div class="color-footer">#F2362A</div>
+          </div>
+
+          <div class="color">
+            <div class="color" style="background-color: rgb(247, 95, 103);"></div>
+            <div class="color-footer">#F2362A</div>
+          </div>
+
+
+      </main>
+    </div>
+    <script src="public/js/main.js"></script>
   </body>
 </html>
