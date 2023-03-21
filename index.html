@@ -20,63 +20,68 @@
   <body>
     <div class="container">
       <header class="flex">
-        <input type="color" name="color-picker" id="color-picker" />
+        <input type="color" name="color-picker" id="color-input-el" />
 
         <!-- dropdown -->
         <div class="dropdown" id="dropdown-el">
           <div class="dropdown-select flex">
-            <span> Monochrome </span>
+            <span id="color-mode-name">Monochrome</span>
             <span class="caret"><i class="fa fa-caret-down"></i></span>
           </div>
           <div class="options">
-            <div class="option selected-option">Monochrome</div>
-            <div class="option">Monochrome-dark</div>
-            <div class="option">Monochrome-light</div>
-            <div class="option">Analogic</div>
-            <div class="option">Complement</div>
-            <div class="option">Analogic-complement</div>
-            <div class="option">Triad</div>
+            <div class="option selected-option" data-mode-name="monochrome">
+              Monochrome
+            </div>
+            <div class="option" data-mode-name="monochrome-dark">
+              Monochrome-dark
+            </div>
+            <div class="option" data-mode-name="monochrome-light">
+              Monochrome-light
+            </div>
+            <div class="option" data-mode-name="analogic">Analogic</div>
+            <div class="option" data-mode-name="complement">Complement</div>
+            <div class="option" data-mode-name="analogic-complement">
+              Analogic-complement
+            </div>
+            <div class="option" data-mode-name="triad">Triad</div>
           </div>
         </div>
 
-        <button>Get color scheme</button>
+        <button id="color-input-btn">Get color scheme</button>
       </header>
 
       <main>
         <div class="colors flex">
           <div class="color">
-            <div class="color" style="background-color: antiquewhite;"></div>
+            <div class="color"></div>
             <div class="color-footer">#F2362A</div>
           </div>
 
-          <div class="color">
-            <div class="color" style="background-color: rgb(124, 70, 0);"></div>
-            <div class="color-footer">#F2362A</div>
-          </div>
+          <div class="color"><div class="color"></div>
+          <div class="color-footer">#F2362A</div>
+        </div>
 
-          <div class="color">
-            <div class="color" style="background-color: rgb(2, 95, 156);"></div>
-            <div class="color-footer">#F2362A</div>
-          </div>
+        <div class="color">
+          <div class="color"></div>
+          <div class="color-footer">#F2362A</div>
+        </div>
 
-          <div class="color">
-            <div class="color" style="background-color: rgb(168, 226, 168);"></div>
-            <div class="color-footer">#F2362A</div>
-          </div>
+        <div class="color">
+          <div class="color" ></div>
+          <div class="color-footer">#F2362A</div>
+        </div>
 
-          <div class="color">
-            <div class="color" style="background-color: rgb(52, 4, 75);"></div>
-            <div class="color-footer">#F2362A</div>
-          </div>
+        <div class="color">
+          <div class="color"></div>
+          <div class="color-footer">#F2362A</div>
+        </div>
 
-          <div class="color">
-            <div class="color" style="background-color: rgb(247, 95, 103);"></div>
-            <div class="color-footer">#F2362A</div>
-          </div>
-
-
+        <div class="color">
+          <div class="color"></div>
+          <div class="color-footer">#F2362A</div>
+        </div>
       </main>
     </div>
-    <script src="public/js/main.js"></script>
+    <script src="public/js/main.js" type="module"></script>
   </body>
 </html>

@@ -92,13 +92,9 @@ header button:hover {
 }
 
 /* Main */
-.colors {
-  
-}
 .color {
   /* width: 100%; */
   flex-grow: 1;
-  background-color: #f2362a;
   height: 40vh;
 }
 .color-footer {
